@@ -1,0 +1,76 @@
+---
+title: Code Block & Tailwind Button
+description: This section previews the Code Block features in markdown and a Tailwind CSS Button Component.
+---
+
+The Code Block in this documentation allows you to display code snippets with optional line numbering and line highlighting.
+
+## Code Block Preview
+
+```javascript:main.js showLineNumbers {3-4}
+function isRocketAboutToCrash() {
+    // Check if the rocket is stable
+    if (!isStable()) {
+        NoCrash(); // Prevent the crash
+    }
+}
+```
+
+In this example, line numbers are displayed for lines 1 to 4. You can specify which lines to highlight using the format `{2,3-5}`.
+
+## Code Block Usage
+
+You can directly use the following syntax to create a code block with line numbers and highlight specific lines:
+
+````plaintext
+```javascript:main.js showLineNumbers {3-4}
+function isRocketAboutToCrash() {
+    // Check if the rocket is stable
+    if (!isStable()) {
+        NoCrash(); // Prevent the crash
+    }
+}
+```
+````
+
+### Features
+
+- **Line Numbers**: Enable line numbers by adding `showLineNumbers` after the opening backticks.
+- **Highlight Lines**: Specify lines to highlight using curly braces (e.g., `{2,3-5}`).
+- **Syntax Highlighting**: Use the appropriate language for syntax highlighting.
+
+## Tailwind CSS Button Component
+
+Below is a preview of a button component styled with Tailwind CSS:
+
+```html:ButtonComponent.html showLineNumbers {2-4}
+<button class="px-4 py-2 font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600">
+    Click Me
+</button>
+```
+
+### Button Preview
+
+<div>
+    <button className="px-4 py-2 font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600">
+        Click Me
+    </button>
+</div>
+
+### Button Usage
+
+Use the following syntax to create a button styled with Tailwind CSS:
+
+````html
+<button class="px-4 py-2 font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600">
+    Click Me
+</button>
+````
+
+### Features
+
+- **Padding**: `px-4 py-2` for horizontal and vertical padding.
+- **Font Styling**: `font-semibold` for a bold font.
+- **Color**: `text-white` for white text and `bg-blue-500` for a blue background.
+- **Hover State**: `hover:bg-blue-600` changes the background color on hover.
+- **Rounded Corners**: `rounded-md` for medium-rounded corners.

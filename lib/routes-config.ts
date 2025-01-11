@@ -23,23 +23,24 @@ export const ROUTES: EachRoute[] = [
         title: "Project Structure",
         href: "/project-structure",
       },
-      {
-        title: "Components",
-        href: "/components",
-        items: [
-          { title: "Stepper", href: "/stepper" },
-          { title: "Tabs", href: "/tabs" },
-          { title: "Note", href: "/note" },
-          { title: "Code Block", href: "/code-block" },
-          { title: "Image & Link", href: "/image-link" },
-          { title: "Custom", href: "/custom" },
-        ],
-      },
       { title: "Themes", href: "/themes" },
       {
         title: "Customize",
         href: "/customize",
       },
+    ],
+  },
+  {
+    title: "Components",
+    href: "/components",
+    noLink: true,
+    items: [
+      { title: "Button", href: "/button" },
+      { title: "Tabs", href: "/tabs" },
+      { title: "Note", href: "/note" },
+      { title: "Code Block", href: "/code-block" },
+      { title: "Image & Link", href: "/image-link" },
+      { title: "Custom", href: "/custom" },
     ],
   },
 ];
